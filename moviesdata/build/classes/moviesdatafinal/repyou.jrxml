@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CustomerReceipt" pageWidth="450" pageHeight="400" columnWidth="410" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e392314-35ac-4d9a-9f61-a8a940bab2ec">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="CustomerID" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `id`, `customer_id`, `type`, `quantity`, `total`, `movieTitle` FROM customer_info WHERE `customer_id` = $P{CustomerID}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="customer_id" class="java.lang.Integer"/>
+	<field name="type" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<field name="total" class="java.lang.Double"/>
+	<field name="movieTitle" class="java.lang.String"/>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="79" y="40" width="270" height="40" uuid="c476ebb9-8657-457a-ac9d-9480f8479a46"/>
+				<textElement textAlignment="Center">
+					<font fontName="Blackadder ITC" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ticket Booking Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="0" width="142" height="64" forecolor="#AB2311" uuid="eee1f130-7842-4d8d-9a4f-692adfed57bf"/>
+				<textElement rotation="None" markup="none">
+					<font fontName="Vladimir Script" size="48" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[C]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" x="40" y="20" width="125" height="40" uuid="69baea91-e5fc-4f17-88f0-d28781315e47"/>
+				<textElement>
+					<font fontName="Brush Script MT" size="30"/>
+				</textElement>
+				<text><![CDATA[inema]]></text>
+			</staticText>
+			<line>
+				<reportElement x="20" y="70" width="370" height="1" uuid="e01abf1c-b153-44fb-8b7a-2406749038e1"/>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="160" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="10" width="380" height="150" forecolor="#E0E0E0" backcolor="#F5F5F5" uuid="79b63bef-014b-4f68-88a5-c00c7ce75bfc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="20" width="130" height="20" uuid="b2a05a2b-4282-482b-a2b5-cec642d04a93"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Ticket no.:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="20" width="150" height="20" uuid="f2035c9e-1b70-42a3-9c95-b1e0f0cb7d76"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{customer_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="50" width="130" height="20" uuid="422bab8c-4eee-4897-bed6-ed2be053d55e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Movie Title:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="50" width="210" height="20" uuid="51d6441b-d138-45a9-93f0-d122ec79f323"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{movieTitle}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="80" width="130" height="20" uuid="9561ea72-bcfe-4e2f-be97-9208cda841b7"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Type:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="80" width="150" height="20" uuid="5ff0da8a-4303-4055-8bf3-a235f77f61de"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="110" width="130" height="20" uuid="94da5311-e67f-4557-b45f-708ef7862a32"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Quantity:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="110" width="150" height="20" uuid="64bf5565-7951-4d1c-982a-61300ac3e719"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="140" width="130" height="20" uuid="1461762d-a603-474d-8dcb-daf2d6c9ddc4"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="140" width="150" height="20" uuid="c8fa9e66-9680-4c97-9c2d-d1046be6283d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="60">
+			<staticText>
+				<reportElement x="0" y="10" width="330" height="30" uuid="79067a21-f580-4f80-9eb6-bb82f186cf4e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Blackadder ITC" size="16"/>
+				</textElement>
+				<text><![CDATA[Enjoy your Movie]]></text>
+			</staticText>
+			<line>
+				<reportElement x="110" y="40" width="120" height="1" uuid="95fbd5d2-e3d2-4345-9a17-74aad71d09f4"/>
+			</line>
+			<textField pattern="MMMM d, yyyy">
+				<reportElement x="310" y="15" width="100" height="30" uuid="86624a4e-cfb4-489d-a061-6dfcd0151254"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="h:mm:ss a">
+				<reportElement x="10" y="20" width="100" height="30" uuid="09870e1f-cb18-45b3-9db6-1198b94be064"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

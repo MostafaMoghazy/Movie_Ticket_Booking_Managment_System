@@ -1,0 +1,232 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Apr-2024, 16:13:19
+    Author     : Radwa
+*/
+
+.top-form{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .2px .2px .4px .2px; 
+}
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor: hand;
+}
+.close:hover{
+    -fx-background-color: #e74141;
+}
+.minimize{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.minimize:hover{
+    -fx-background-color: #dadada;
+}
+.nav-form{
+    -fx-background-color:linear-gradient(to top right, #1e242e, #ae2d3c);
+}
+.nav-btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-alignment: CENTER_LEFT;
+}
+.nav-btn:hover{
+    -fx-background-color: #1D2B53 ;
+}
+.signout{
+    -fx-background-color: #ae2d3c;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.signout:hover{
+    -fx-background-color:#537895;
+}
+.bg-white{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.3), 8,0,0,0);
+    -fx-background-radius: 8px;
+}
+.bg-white:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.5), 8,0,0,0);
+}
+.card1{
+    -fx-background-color: linear-gradient(to top right, #10bda1, #00CDAC);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+.card1-left{
+    -fx-background-color: linear-gradient(to right,#18b59c, #10bda1);
+}
+.card1:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.5), 5,0,0,0);
+}
+.card2{
+    -fx-background-color: linear-gradient(to right,#6d52f4, #DDC9FF);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+.card2-left{
+    -fx-background-color: linear-gradient(to right,#8068e7,#927eea);
+}
+.card3{
+    -fx-background-color: linear-gradient(to right, #ff9494 , #ffa2ad);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+.card3-left{
+     -fx-background-color: linear-gradient(to right,#ff7a7a,#ff9494);
+}
+.card3:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.5), 5,0,0,0);
+}
+.card2:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,.5), 5,0,0,0);
+}
+
+.add-textfield{
+    -fx-background-color: #fff;
+    -fx-background-radius: 0px 5px 0px 0px;
+    -fx-border-color: #1D2B53;
+    -fx-border-width: .8px;
+    -fx-border-radius: 0px 5px 0px 0px;
+    -fx-font-size: 14px;
+}
+.add-textfield:focused{
+    -fx-border-color: #537895;
+    -fx-border-width: 1.5px;
+}
+.insert-btn{
+    -fx-background-color: #1D2B53;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.insert-btn:hover{
+    -fx-background-color: #1D2B53;
+}
+.update-btn{
+    -fx-background-color: #1D2B53;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.update-btn:hover{
+    -fx-background-color: #1D2B53;
+}
+.delete-btn{
+    -fx-background-color: #1D2B53;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.delete-btn:hover{
+    -fx-background-color: #1D2B53;
+}
+.clear-btn{
+    -fx-background-color: #1D2B53;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+.clear-btn:hover{
+    -fx-background-color: #1D2B53;
+}
+.search{
+    -fx-background-color: #fff;
+    -fx-background-radius: 0px 10px 0px 0px;
+    -fx-border-color: #1D2B53;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 0px 10px 0px 0px;
+    -fx-padding: 0px 0px 0px 27px;
+}
+.search:focused{
+    -fx-border-color: #1D2B53;
+    -fx-border-width: 2px;
+}
+.table-view{
+    -fx-background-color: #fff;
+    -fx-background-radius:10px;
+    -fx-border-radius: 10px;
+    -fx-border-color:#537895;
+    -fx-fill: #fff;
+    -fx-padding: 0px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to top right, #1e242e, #ae2d3c);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 10px 10px 0px 0px;
+}
+.table-view .column-header, .table-view .filter{
+    -fx-background-color:transparent;
+    -fx-size:50px;
+    -fx-fill: #fff;
+    
+}
+.table-view .column-header .label{
+      -fx-text-fill: #fff;
+}
+.info-card{
+    -fx-border-color: #1D2B53;
+    -fx-border-radius: 10px 0px 0px 10px;
+}
+.label-info{
+    -fx-border-color: #1D2B53;
+    -fx-border-radius: 0px 5px 0px 0px;
+    -fx-border-width: .8px;
+    -fx-padding:5px;
+    -fx-font-size:14px;
+    
+}
+.spinner{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .5px;
+}
+.buy-btn{
+    -fx-background-color: #1D2B53;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.buy-btn:hover{
+    -fx-background-color: #1D2B53;
+}
+.receipt-btn{
+    -fx-background-color:#1D2B53;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.receipt-btn:hover{
+    -fx-background-color: #1D2B53;
+}
+.combo-box{
+    -fx-background-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-border-color: #09203F;
+    -fx-border-width: .5px;
+    -fx-border-radius: 5px;
+}
+.combo-box:focused{
+    -fx-border-color: #1D2B53;
+    -fx-border-width: 1px;
+}
+.card-customer{
+    -fx-background-color: #fff;
+    -fx-background-radius: 5px;
+    -fx-border-color: #537895;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}

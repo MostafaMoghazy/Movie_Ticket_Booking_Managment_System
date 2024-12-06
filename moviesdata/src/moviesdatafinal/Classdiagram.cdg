@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="moviesdata">
+  <ClassDiagramComponents>
+    <Class name="Autoislider" package="moviesdatafinal" visibility="public" xPosition="283.0" yPosition="27.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="start" returnType="Stage" visibility="public">
+          <Argument type="Stage" name="stage"/>
+        </Method>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="CustomerData" package="moviesdatafinal" visibility="public" xPosition="1941.0" yPosition="676.0">
+      <Fields>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="title" type="String" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="total" type="double" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="time" type="Time" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+          <Argument type="String" name="type"/>
+          <Argument type="String" name="title"/>
+          <Argument type="Integer" name="quantity"/>
+          <Argument type="double" name="total"/>
+          <Argument type="Date" name="date"/>
+          <Argument type="Time" name="time"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="getTotal" returnType="double" visibility="public"/>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="getTime" returnType="Time" visibility="public"/>
+        <Method name="getTitle" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="int" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="setType" returnType="String" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="setTitle" returnType="String" visibility="public">
+          <Argument type="String" name="title"/>
+        </Method>
+        <Method name="setQuantity" returnType="int" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="setTotal" returnType="double" visibility="public">
+          <Argument type="double" name="total"/>
+        </Method>
+        <Method name="setDate" returnType="Date" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+        <Method name="setTime" returnType="Time" visibility="public">
+          <Argument type="Time" name="time"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DashboardController" package="moviesdatafinal" visibility="public" xPosition="1218.0" yPosition="51.0">
+      <Fields>
+        <Field name="customer_tableView" type="TableView&lt;CustomerData&gt;" visibility="private"/>
+        <Field name="main_slide" type="AnchorPane" visibility="private"/>
+        <Field name="addMovies_btn" type="Button" visibility="private"/>
+        <Field name="addMovies_clearBtn" type="Button" visibility="private"/>
+        <Field name="addMovies_col_date" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_duration" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_genre" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_genre1" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_movieTitle" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_movieTitle1" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_normalClass_price" type="Label" visibility="private"/>
+        <Field name="addMovies_col_normalClass_quantity" type="Spinner&lt;Integer&gt;" visibility="private"/>
+        <Field name="addMovies_col_showingDate" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="addMovies_col_specialClass_price" type="Label" visibility="private"/>
+        <Field name="addMovies_col_specialClass_quantity" type="Spinner&lt;Integer&gt;" visibility="private"/>
+        <Field name="addMovies_date" type="DatePicker" visibility="private"/>
+        <Field name="addMovies_date1" type="DatePicker" visibility="private"/>
+        <Field name="addMovies_deleteBtn" type="Button" visibility="private"/>
+        <Field name="addMovies_duration" type="TextField" visibility="private"/>
+        <Field name="addMovies_form" type="AnchorPane" visibility="private"/>
+        <Field name="addMovies_genre1" type="Label" visibility="private"/>
+        <Field name="addMovies_genre2" type="TextField" visibility="private"/>
+        <Field name="addMovies_imageView" type="ImageView" visibility="private"/>
+        <Field name="addMovies_imageview" type="ImageView" visibility="private"/>
+        <Field name="addMovies_import" type="Button" visibility="private"/>
+        <Field name="addMovies_insertBtn" type="Button" visibility="private"/>
+        <Field name="addMovies_movieTitle1" type="Label" visibility="private"/>
+        <Field name="addMovies_movieTitle2" type="TextField" visibility="private"/>
+        <Field name="addMovies_search" type="TextField" visibility="private"/>
+        <Field name="addMovies_selectMovie" type="Button" visibility="private"/>
+        <Field name="addMovies_table" type="TableView&lt;Fmoviesdata&gt;" visibility="private"/>
+        <Field name="addMovies_tableView" type="TableView&lt;Fmoviesdata&gt;" visibility="private"/>
+        <Field name="addMovies_title" type="Label" visibility="private"/>
+        <Field name="addMovies_updateBtn" type="Button" visibility="private"/>
+        <Field name="addScreening_tableView" type="TableView&lt;Fmoviesdata&gt;" visibility="private"/>
+        <Field name="availableMovies_btn" type="Button" visibility="private"/>
+        <Field name="availableMovies_buyBtn" type="Button" visibility="private"/>
+        <Field name="availableMovies_clearBtn" type="Button" visibility="private"/>
+        <Field name="availableMovies_form" type="AnchorPane" visibility="private"/>
+        <Field name="availableMovies_receiptBtn" type="Button" visibility="private"/>
+        <Field name="availableMovies_total" type="Label" visibility="private"/>
+        <Field name="close" type="FontAwesomeIcon" visibility="private"/>
+        <Field name="customers_btn" type="Button" visibility="private"/>
+        <Field name="customers_clearBtn" type="Button" visibility="private"/>
+        <Field name="customers_col_date" type="TableColumn&lt;CustomerData, String&gt;" visibility="private"/>
+        <Field name="customers_col_movieTitle" type="TableColumn&lt;CustomerData, String&gt;" visibility="private"/>
+        <Field name="customers_col_ticketNumber" type="TableColumn&lt;CustomerData, String&gt;" visibility="private"/>
+        <Field name="customers_col_time" type="TableColumn&lt;CustomerData, String&gt;" visibility="private"/>
+        <Field name="customers_date" type="Label" visibility="private"/>
+        <Field name="customers_deleteBtn" type="Button" visibility="private"/>
+        <Field name="customers_form" type="AnchorPane" visibility="private"/>
+        <Field name="customers_genre" type="Label" visibility="private"/>
+        <Field name="customers_movieTitle" type="Label" visibility="private"/>
+        <Field name="customers_search" type="TextField" visibility="private"/>
+        <Field name="customers_ticketNumber" type="Label" visibility="private"/>
+        <Field name="customers_time" type="Label" visibility="private"/>
+        <Field name="dashboard_availableMovies" type="Label" visibility="private"/>
+        <Field name="dashboard_btn" type="Button" visibility="private"/>
+        <Field name="dashboard_form" type="AnchorPane" visibility="private"/>
+        <Field name="dashboard_totalEarnToday" type="Label" visibility="private"/>
+        <Field name="dashboard_totalSoldTickets" type="Label" visibility="private"/>
+        <Field name="editScreening_btn" type="Button" visibility="private"/>
+        <Field name="editScreening_col_current" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="editScreening_col_duration" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="editScreening_col_genre" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="editScreening_col_movieTitle" type="TableColumn&lt;Fmoviesdata, String&gt;" visibility="private"/>
+        <Field name="editScreening_current" type="ComboBox&lt;?&gt;" visibility="private"/>
+        <Field name="editScreening_delete" type="Button" visibility="private"/>
+        <Field name="editScreening_form" type="AnchorPane" visibility="private"/>
+        <Field name="editScreening_imageView" type="ImageView" visibility="private"/>
+        <Field name="editScreening_search" type="TextField" visibility="private"/>
+        <Field name="editScreening_title" type="Label" visibility="private"/>
+        <Field name="editScreening_update" type="Button" visibility="private"/>
+        <Field name="minimize" type="FontAwesomeIcon" visibility="private"/>
+        <Field name="signOut" type="FontAwesomeIcon" visibility="private"/>
+        <Field name="topForm" type="AnchorPane" visibility="private"/>
+        <Field name="username" type="Label" visibility="private"/>
+        <Field name="image1" type="ImageView" visibility="private"/>
+        <Field name="image2" type="ImageView" visibility="private"/>
+        <Field name="image3" type="ImageView" visibility="private"/>
+        <Field name="image4" type="ImageView" visibility="private"/>
+        <Field name="image" type="Image" visibility="private"/>
+        <Field name="connect" type="Connection" visibility="private"/>
+        <Field name="prepare" type="PreparedStatement" visibility="private"/>
+        <Field name="statement" type="Statement" visibility="private"/>
+        <Field name="result" type="ResultSet" visibility="private"/>
+        <Field name="SPinner1" type="SpinnerValueFactory&lt;Integer&gt;" visibility="private"/>
+        <Field name="SPinner2" type="SpinnerValueFactory&lt;Integer&gt;" visibility="private"/>
+        <Field name="price1" type="float" visibility="private"/>
+        <Field name="price2" type="float" visibility="private"/>
+        <Field name="total" type="float" visibility="private"/>
+        <Field name="qty1" type="int" visibility="private"/>
+        <Field name="qty2" type="int" visibility="private"/>
+        <Field name="qty" type="int" visibility="private"/>
+        <Field name="num" type="int" visibility="private"/>
+        <Field name="totalMovies" type="int" visibility="private"/>
+        <Field name="totalIncome" type="double" visibility="private"/>
+        <Field name="soldTickets" type="int" visibility="private"/>
+        <Field name="cusList" type="ObservableList&lt;CustomerData&gt;" visibility="private"/>
+        <Field name="availableMoviesList" type="ObservableList&lt;Fmoviesdata&gt;" visibility="private"/>
+        <Field name="currentList" type="String[]" visibility="private"/>
+        <Field name="editScreeningL" type="ObservableList&lt;Fmoviesdata&gt;" visibility="private"/>
+        <Field name="listAddMovies" type="ObservableList&lt;Fmoviesdata&gt;" visibility="private"/>
+        <Field name="x" type="double" visibility="package"/>
+        <Field name="y" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="slider" returnType="void" visibility="public"/>
+        <Method name="receipt" returnType="void" visibility="public"/>
+        <Method name="totalAvailableMovies" returnType="void" visibility="public"/>
+        <Method name="displaytotalAvailableMovies" returnType="void" visibility="public"/>
+        <Method name="totalIncomeToday" returnType="void" visibility="public"/>
+        <Method name="displaytotalIncomeToday" returnType="void" visibility="public"/>
+        <Method name="countTickets" returnType="void" visibility="public"/>
+        <Method name="displaytotalSoldTickets" returnType="void" visibility="public"/>
+        <Method name="searchCustomer" returnType="void" visibility="public"/>
+        <Method name="customerList" returnType="ObservableList&lt;CustomerData&gt;" visibility="public"/>
+        <Method name="showCustomerList" returnType="void" visibility="public"/>
+        <Method name="selectCustomerList" returnType="void" visibility="public"/>
+        <Method name="clearCustomer" returnType="void" visibility="public"/>
+        <Method name="deleteCustomer" returnType="void" visibility="public"/>
+        <Method name="buy" returnType="void" visibility="public"/>
+        <Method name="clearpurchaseTicketInfo" returnType="void" visibility="public"/>
+        <Method name="showSpinnerValue" returnType="void" visibility="public"/>
+        <Method name="getSpinnerValue" returnType="MouseEvent" visibility="public">
+          <Argument type="MouseEvent" name="event"/>
+        </Method>
+        <Method name="selectMovie" returnType="void" visibility="public"/>
+        <Method name="selectAvailableMovies" returnType="void" visibility="public"/>
+        <Method name="avilableMoviesList" returnType="ObservableList&lt;Fmoviesdata&gt;" visibility="public"/>
+        <Method name="showAvaiableMovies" returnType="void" visibility="public"/>
+        <Method name="movieId" returnType="void" visibility="public"/>
+        <Method name="searchEditScreening" returnType="void" visibility="public"/>
+        <Method name="updateEditScreening" returnType="void" visibility="public"/>
+        <Method name="clearEditScreening" returnType="void" visibility="public"/>
+        <Method name="selectEditScreening" returnType="void" visibility="public"/>
+        <Method name="comboBox" returnType="void" visibility="public"/>
+        <Method name="editScreeningList" returnType="ObservableList&lt;Fmoviesdata&gt;" visibility="public"/>
+        <Method name="showEditScreening" returnType="void" visibility="public"/>
+        <Method name="searchAddMovies" returnType="void" visibility="public"/>
+        <Method name="deleteAddMovies" returnType="void" visibility="public"/>
+        <Method name="updateAddMovies" returnType="void" visibility="public"/>
+        <Method name="insertAddMovies" returnType="void" visibility="public"/>
+        <Method name="clearAddMoviesList" returnType="void" visibility="public"/>
+        <Method name="importImage" returnType="void" visibility="public"/>
+        <Method name="addMoviesList" returnType="ObservableList&lt;Fmoviesdata&gt;" visibility="public"/>
+        <Method name="showAddMoviesList" returnType="void" visibility="public"/>
+        <Method name="selectAddMoviesList" returnType="void" visibility="public"/>
+        <Method name="logOut" returnType="void" visibility="public"/>
+        <Method name="dashboard" returnType="void" visibility="public"/>
+        <Method name="switchForm" returnType="ActionEvent" visibility="public">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="displayUsername" returnType="void" visibility="public"/>
+        <Method name="close" returnType="void" visibility="public"/>
+        <Method name="minimize" returnType="void" visibility="public"/>
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Database" package="moviesdatafinal" visibility="public" xPosition="505.0" yPosition="27.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="connectDb" returnType="Connection" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Fmoviesdata" package="moviesdatafinal" visibility="public" xPosition="13.0" yPosition="463.0">
+      <Fields>
+        <Field name="id" type="Integer" visibility="private"/>
+        <Field name="title" type="String" visibility="private"/>
+        <Field name="genre" type="String" visibility="private"/>
+        <Field name="duration" type="String" visibility="private"/>
+        <Field name="image" type="String" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="current" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Integer" name="id"/>
+          <Argument type="String" name="title"/>
+          <Argument type="String" name="genre"/>
+          <Argument type="String" name="duration"/>
+          <Argument type="String" name="image"/>
+          <Argument type="Date" name="date"/>
+          <Argument type="String" name="current"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCurrent" returnType="String" visibility="public"/>
+        <Method name="setCurrent" returnType="String" visibility="public">
+          <Argument type="String" name="current"/>
+        </Method>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setId" returnType="Integer" visibility="public">
+          <Argument type="Integer" name="id"/>
+        </Method>
+        <Method name="getTitle" returnType="String" visibility="public"/>
+        <Method name="setTitle" returnType="String" visibility="public">
+          <Argument type="String" name="title"/>
+        </Method>
+        <Method name="getGenre" returnType="String" visibility="public"/>
+        <Method name="setGenre" returnType="String" visibility="public">
+          <Argument type="String" name="genre"/>
+        </Method>
+        <Method name="getDuration" returnType="String" visibility="public"/>
+        <Method name="setDuration" returnType="String" visibility="public">
+          <Argument type="String" name="duration"/>
+        </Method>
+        <Method name="getImage" returnType="String" visibility="public"/>
+        <Method name="setImage" returnType="String" visibility="public">
+          <Argument type="String" name="image"/>
+        </Method>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setDate" returnType="Date" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FXMLDocumentController" package="moviesdatafinal" visibility="public" xPosition="17.0" yPosition="994.0">
+      <Fields>
+        <Field name="signUp_alreadyHaveAccount" type="Hyperlink" visibility="private"/>
+        <Field name="signUp_btn" type="Button" visibility="private"/>
+        <Field name="signUp_close" type="Button" visibility="private"/>
+        <Field name="signUp_email" type="TextField" visibility="private"/>
+        <Field name="signUp_form" type="AnchorPane" visibility="private"/>
+        <Field name="signUp_minimize" type="Button" visibility="private"/>
+        <Field name="signUp_username" type="TextField" visibility="private"/>
+        <Field name="signUp_password" type="PasswordField" visibility="private"/>
+        <Field name="signin_close" type="Button" visibility="private"/>
+        <Field name="signin_createAccount" type="Hyperlink" visibility="private"/>
+        <Field name="signin_form" type="AnchorPane" visibility="private"/>
+        <Field name="signin_loginBtn" type="Button" visibility="private"/>
+        <Field name="signin_minimize" type="Button" visibility="private"/>
+        <Field name="signin_password" type="PasswordField" visibility="private"/>
+        <Field name="signin_username" type="TextField" visibility="private"/>
+        <Field name="mediaPlayer" type="MediaPlayer" visibility="private"/>
+        <Field name="connect" type="Connection" visibility="private"/>
+        <Field name="prepare" type="PreparedStatement" visibility="private"/>
+        <Field name="statemenet" type="Statement" visibility="private"/>
+        <Field name="result" type="ResultSet" visibility="private"/>
+        <Field name="x" type="double" visibility="private"/>
+        <Field name="y" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="play" returnType="void" visibility="package"/>
+        <Method name="playHitSound" returnType="String" visibility="package">
+          <Argument type="String" name="fileName"/>
+        </Method>
+        <Method name="validEmail" returnType="boolean" visibility="public"/>
+        <Method name="singUP" returnType="void" visibility="public"/>
+        <Method name="signin" returnType="void" visibility="public"/>
+        <Method name="switchForm" returnType="ActionEvent" visibility="public">
+          <Argument type="ActionEvent" name="event"/>
+        </Method>
+        <Method name="signIn_close" returnType="void" visibility="public"/>
+        <Method name="signIn_minimize" returnType="void" visibility="public"/>
+        <Method name="signUp_close" returnType="void" visibility="public"/>
+        <Method name="signUp_minimize" returnType="void" visibility="public"/>
+        <Method name="initialize" returnType="ResourceBundle" visibility="public">
+          <Argument type="URL" name="url"/>
+          <Argument type="ResourceBundle" name="rb"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GetData" package="moviesdatafinal" visibility="public" xPosition="29.0" yPosition="220.0">
+      <Fields>
+        <Field name="username" type="String" visibility="public" isStatic="true"/>
+        <Field name="path" type="String" visibility="public" isStatic="true"/>
+        <Field name="movieId" type="Integer" visibility="public" isStatic="true"/>
+        <Field name="title" type="String" visibility="public" isStatic="true"/>
+        <Field name="ticket" type="int" visibility="public" isStatic="true"/>
+        <Field name="avMovie" type="int" visibility="public" isStatic="true"/>
+        <Field name="total" type="double" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Moviesdata" package="moviesdatafinal" visibility="public" xPosition="29.0" yPosition="27.0">
+      <Fields>
+        <Field name="x" type="double" visibility="package"/>
+        <Field name="y" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="start" returnType="Stage" visibility="public">
+          <Argument type="Stage" name="stage"/>
+        </Method>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="editScreening_col_movieTitle" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addMovies_col_showingDate" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addScreening_tableView" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customers_col_movieTitle" source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="editScreening_col_duration" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addMovies_col_movieTitle" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customer_tableView" source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="editScreening_col_current" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="editScreening_col_genre" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customers_col_time" source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addMovies_col_genre1" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addMovies_table" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addMovies_col_movieTitle1" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listAddMovies" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ObservableList&lt;fmoviesdata&gt;"/>
+    <HasRelation name="addMovies_tableView" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="editScreeningL" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ObservableList&lt;fmoviesdata&gt;"/>
+    <HasRelation name="addMovies_col_date" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="addMovies_col_genre" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customers_col_date" source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cusList" source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ObservableList&lt;customerData&gt;"/>
+    <HasRelation name="availableMoviesList" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ObservableList&lt;fmoviesdata&gt;"/>
+    <HasRelation name="addMovies_col_duration" source="moviesdatafinal.DashboardController" target="moviesdatafinal.Fmoviesdata" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customers_col_ticketNumber" source="moviesdatafinal.DashboardController" target="moviesdatafinal.CustomerData" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
