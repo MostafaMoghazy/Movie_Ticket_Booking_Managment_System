@@ -5,12 +5,12 @@ The **Movie Ticket Booking Management System (MTBMS)** is a robust desktop appli
 
 ## **Development Team**
 This project was collaboratively developed by a skilled and dedicated team:
-- **Mostafa Ahmed Lotfy**
+- **Mostafa Ahmed Lotfy Moghazy**
 - **Youssef Ayman Ibrahim**
 - **Amr Nabil Ibrahim**
 - **Alaa Hazem**
 - **Radwa Amr**
-- **Shahd Ehab Hamed**
+- **Shahd Ehab**
 
 ## **Technologies Used**
 - **Frontend**: JavaFX for a dynamic and interactive user interface.
